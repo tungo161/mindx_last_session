@@ -1,0 +1,39 @@
+$(document).ready(function(){
+    $('.service-slide').owlCarousel({
+        loop:true,
+        margin:100,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            800:{
+                items:4
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+});
+$(document).ready(function(){
+    $('.project-slide').owlCarousel({
+        loop:true,
+        margin:24,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+});

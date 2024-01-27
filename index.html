@@ -1,107 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Coder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style_all.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+</head>
+<body>
+    <header class="bg-home py-3">
+        <div class="header-mobile">
+            <div class="container d-flex justify-content-between">
+                <img src="./images/three-horizontal-lines-icon.svg" height="20px" width="20px" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></img>
+                <div class="logo">
+                    <img src="./images/logo.png">
+                </div>
+                <div>
 
-  <body>
-    <header class="header">
-      <a class="logo">My Portfolio</a>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a>Blog</a>
-        <a>Portfolio</a>
-      </nav>
-    </header>
-
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's me</h3>
-        <h1>Smart Page</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-          <br />
-          ratione soluta quasi fuga sit rem.
-        </p>
-        <div class="social-media">
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="#"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title" id="offcanvasScrollingLabel">
+                        <div class="logo">
+                            <img src="./images/logo.png">
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body home-canvas d-flex flex-column">
+                    <a class="menu-item text-decoration-none pb-3 border-bottom active" href="#welcome_id">
+                        Xin chào
+                    </a>
+                    <a class="menu-item text-decoration-none py-3 border-bottom" href="#mem_1">
+                        Tú
+                    </a>
+                    <a class="menu-item text-decoration-none py-3 border-bottom" href="#mem_2">
+                        Chính
+                    </a>
+                    <a class="menu-item text-decoration-none py-3 border-bottom" href="#mem_3">
+                        Hải
+                    </a>
+                    <a class="menu-item text-decoration-none py-3 border-bottom" href="#service_id">
+                        Khả năng
+                    </a>
+                    <a class="menu-item text-decoration-none py-3 border-bottom" href="#project_id">
+                        Dự án
+                    </a>
+                    <a class="menu-item text-decoration-none py-3 border-bottom" href="#contact_id">
+                        Liên hệ
+                    </a>
+                </div>
+            </div>
         </div>
-        <a class="btn" href="#">Join My Telegram</a>
-      </div>
-
-      <div class="home-img">
-        <img src="./images/logo.png" alt="LogoMy" />
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="./images/logo.png" alt="LogoMy" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span> Me</span></h2>
-        <h3>Frontend Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          numquam cum, minus voluptatem impedit vitae quia, tempore molestias
-          pariatur nam deserunt eius laudantium eos. Nihil, nesciunt sunt
-          consequuntur, eius nam quasi, quia laudantium cum dolore numquam atque
-          maiores. Sunt aut aliquam pariatur laudantium quidem distinctio?
-        </p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="about-content">
-        <h2 class="heading">About <span> Me</span></h2>
-        <h3>Frontend Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          numquam cum, minus voluptatem impedit vitae quia, tempore molestias
-          pariatur nam deserunt eius laudantium eos. Nihil, nesciunt sunt
-          consequuntur, eius nam quasi, quia laudantium cum dolore numquam atque
-          maiores. Sunt aut aliquam pariatur laudantium quidem distinctio?
-        </p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-      <div class="about-img">
-        <img src="./images/logo.png" alt="LogoMy" />
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="./images/logo.png" alt="LogoMy" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span> Me</span></h2>
-        <h3>Frontend Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          numquam cum, minus voluptatem impedit vitae quia, tempore molestias
-          pariatur nam deserunt eius laudantium eos. Nihil, nesciunt sunt
-          consequuntur, eius nam quasi, quia laudantium cum dolore numquam atque
-          maiores. Sunt aut aliquam pariatur laudantium quidem distinctio?
-        </p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="js/script.js"></script>
-  </body>
+        <div class="header-pc container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                </div>
+                <div class="menu-header">
+                    <a class="menu-item text-decoration-none active" href="#welcome_id">
+                        Xin chào
+                    </a>
+                    <a class="menu-item text-decoration-none" href="#mem_1">
+                        Tú
+                    </a>
+                    <a class="menu-item text-decoration-none" href="#mem_2">
+                        Chính
+                    </a>
+                    <a class="menu-item text-decoration-none" href="#mem_3">
+                        Hải
+                    </a>
+                    <a class="menu-item text-decoration-none" href="#service_id">
+                        Khả năng
+                    </a>
+                    <a class="menu-item text-decoration-none" href="#project_id">
+                        Dự án
+                    </a>
+                    <a class="menu-item text-decoration-none" href="#contact_id">
+                        Liên hệ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="welcome bg-home section" id="welcome_id">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-xl-6 p-2">
+                    <img class="w-100" src="./images/higuys.svg">
+                </div>
+                <div class="col-12 col-xl-6">
+                    <p class="text-uppercase mb-1">Xin chào!</p>
+                    <h1>Chúng tôi là Nhóm 5</h1>
+                    <p class="mt-3">Những Web Developer tương lai</p>
+                    <div class="social-media d-flex gap-3">
+                        <a class="social-media-icon" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a class="social-media-icon" href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a class="social-media-icon" href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a class="social-media-icon" href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a class="social-media-icon" href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="move-contact-button mt-3">
+                        <a class="text-decoration-none" href="#">
+                            Liên hệ
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-bg"></div>
+    <div class="container info-member section py-4 my-3" id="mem_1">
+        <div class="row">
+            <div class="col-12 col-xl-6 mb-xl-0 mb-3">
+                <h2 class="mb-3">Xin chào! Tôi là Ngô Ngọc Tú</h2>
+                <p>
+                    Tôi là Web Developer chuyên mảng back-end với 1 năm kinh nghiệm. Tuy nhiên tôi vẫn đam mê thiết kế UI/UX và Thiết kế Web và sử dụng cơ bản các công cụ thiết kế đồ họa như Photoshop . Tôi là người học hỏi nhanh và là người làm việc theo nhóm để hoàn thành công việc. Tôi có thể dễ dàng tận dụng những thành quả dễ đạt được và nhanh chóng tối đa hóa khả năng phân phối kịp thời cho các lược đồ thời gian thực.
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-3 col-4 pb-2">
+                        Tuổi:
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        22
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Email:
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        ngongoctu268@gmail.com
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Điện thoại
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        0328000000
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Địa chỉ
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        Hà Nội, Việt Nam
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Tình trạng
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        Độc thân                        
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100 mt-3">
+                    <a class="view_more_button text-decoration-none" href="./cv_mem1.html">
+                        Xem thêm
+                    </a>   
+                </div>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div class="avatar-member d-flex justify-content-xl-end justify-content-center">
+                    <img src="./images/avatar_mem1.jpg" width="400px" height="400px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container info-member section py-4 my-3" id="mem_2">
+        <div class="row column-xl-reverse">
+            <div class="col-12 col-xl-6">
+                <div class="avatar-member d-flex justify-content-xl-start justify-content-center">
+                    <img src="./images/avavtar_mem_2.jpg" width="400px" height="400px">
+                </div>
+            </div>
+            <div class="col-12 col-xl-6 mb-xl-0 mb-3">
+                <h2 class="mb-3">Xin chào! Tôi Là Hoàng Công Chính</h2>
+                <p>
+                    Kính chào anh, chị. Tôi là nhân viên kĩ thuật bảo hành với 2 năm kinh nghiệm, chuyên xử lí các vấn đề kĩ thuật về linh kiện điện tử và đưa ra những hướng giải quyết tối ưu cho đối tác và khách hàng. Với khả năng học hỏi nhanh và nhạy bén trong việc, xử lí tình huống tốt và chịu áp lực cao, tôi có thể xử lí hiệu quả những công việc và yêu cầu của công ty giao và đem lại nhiều lợi ích cho công ty.                </p>
+                <div class="row mt-3">
+                    <div class="col-md-3 col-4 pb-2">
+                        Tuổi:
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        22
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Email:
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        ngongoctu268@gmail.com
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Điện thoại
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        0328000000
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Địa chỉ
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        Hà Nội, Việt Nam
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Tình trạng
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        Độc thân                        
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100 mt-3">
+                    <a class="view_more_button text-decoration-none" href="./cv_mem2.html">
+                        Xem thêm
+                    </a>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container info-member section py-4 my-3" id="mem_3">
+        <div class="row">
+            <div class="col-12 col-xl-6 mb-xl-0 mb-3">   
+                <h2 class="mb-3">Xin chào! Tôi là Ngô Ngọc Tú</h2>
+                <p>
+                    Tôi là Web Developer chuyên mảng back-end với 1 năm kinh nghiệm. Tuy nhiên tôi vẫn đam mê thiết kế UI/UX và Thiết kế Web và sử dụng cơ bản các công cụ thiết kế đồ họa như Photoshop . Tôi là người học hỏi nhanh và là người làm việc theo nhóm để hoàn thành công việc. Tôi có thể dễ dàng tận dụng những thành quả dễ đạt được và nhanh chóng tối đa hóa khả năng phân phối kịp thời cho các lược đồ thời gian thực.
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-3 col-4 pb-2">
+                        Tuổi:
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        22
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Email:
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        ngongoctu268@gmail.com
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Điện thoại
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        0328000000
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Địa chỉ
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        Hà Nội, Việt Nam
+                    </div>
+                    <div class="col-md-3 col-4 pb-2">
+                        Tình trạng
+                    </div>
+                    <div class="col-md-9 col-8 pb-2 fw-bolder">
+                        Độc thân                        
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100 mt-3">
+                    <a class="view_more_button text-decoration-none" href="./cv_mem3.html">
+                        Xem thêm
+                    </a>   
+                </div>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div class="avatar-member d-flex justify-content-xl-end justify-content-center">
+                    <img src="./images/avatar_mem1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container service section py-4 my-3" id="service_id">
+        <div class="service-title">
+            <h2 class="text-center mb-3">
+                Chúng tôi có thể làm được gì?
+            </h2>
+            <p class="max-width-800px mx-auto text-center pb-4 mb-3">
+                Chúng tôi nghiên cứu và lập trình cho bất kỳ trang web hoặc ứng dụng nào phù hợp với yêu cầu người dùng. Đồng thời có thể nhanh chóng tối đa hóa khả năng phân phối kịp thời cho các lược đồ thời gian thực.
+            </p>
+        </div>
+        <div class="service-slide owl-carousel owl-theme">
+            <div class="item">
+                <img src="./images/programmer-computer-icon.svg" height="120px">
+                <h5>Web Design</h5>
+            </div>
+            <div class="item">
+                <img src="./images/graphic-designing-icon.svg" height="120px">
+                <h5>Graphic Design</h5>
+            </div>
+            <div class="item">
+                <img src="./images/website-ui-ux-icon.svg" height="120px">
+                <h5>UI/UX</h5>
+            </div>
+            <div class="item">
+                <img src="./images/business-communication-icon.svg" height="120px">
+                <h5>Agile</h5>
+            </div>
+            <div class="item">
+                <img src="./images/table-icon.svg" height="120px">
+                <h5>Database</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container project section py-4 my-3" id="project_id">
+        <div class="project-title">
+            <h2 class="text-center mb-3">
+                Dự án
+            </h2>
+        </div>
+        <div class="project-infomation">
+            <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 w-100">
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/1-small.png">
+                    </div>
+                </div>
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/2-small.png">
+                    </div>
+                </div>
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/3-small.png">
+                    </div>
+                </div>
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/4-small.png">
+                    </div>
+                </div>
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/5-small.png">
+                    </div>
+                </div>
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/6-small.png">
+                    </div>
+                </div>
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/7-small.png">
+                    </div>
+                </div>
+                <div class="col mb-xl-4 mb-3">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 object-fit-cover" src="./images/8-small.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container contact section py-4 my-3" id="contact_id">
+        <div class="contact-title">
+            <h2 class="text-center mb-3">
+                Liên hệ với chúng tôi
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xl-6 bg-home">
+                <form class="contact-box" method="post">
+                    <div class="contact-item contact-name">
+                        <label for="name_id" class="mb-2">
+                            Họ tên
+                        </label>
+                        <input class="w-100" type="text" id="name_id" required placeholder="Nhập họ tên">
+                    </div>
+                    <div class="contact-item contact-email">
+                        <label for="email_id" class="mb-2">
+                            Email
+                        </label>
+                        <input class="w-100" type="email" id="email_id" required placeholder="Nhập email">
+                    </div>
+                    <div class="contact-item contact-message">
+                        <label for="" class="mb-2">
+                            Nội dung liên hệ
+                        </label>
+                        <textarea class="w-100" type="text" required  rows="5" >
+                        </textarea>
+                    </div>
+                    <button type="submit" class="move-contact-button mt-3">Gửi
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </form>
+                
+            </div>
+            <div class="col-12 col-xl-6">
+                <h5>
+                    Hãy liên hệ với chúng tôi nếu bạn muốn
+                </h5>
+                <p>
+                    Nếu bạn thích công việc của tôi và muốn sử dụng các dịch vụ của tôi thì hãy gửi tin nhắn cho tôi bằng biểu mẫu liên hệ.
+                </p>
+                <p>
+                    Hoặc liên lạc email và số điện thoại của nhóm chúng tôi
+                </p>
+                <div class="row">
+                    <div class="col-2 mb-2">
+                        Email
+                    </div>
+                    <div class="col-10 mb-2 fw-bolder">
+                        threedevweb123@gmail.com
+                    </div>
+                    <div class="col-2 mb-2">
+                        Twitter
+                    </div>
+                    <div class="col-10 mb-2 fw-bolder">
+                        twitter@ThreeDevWeb0854
+                    </div>
+                    <div class="col-2 mb-2">
+                        Điện thoại
+                    </div>
+                    <div class="col-10 mb-2 fw-bolder">
+                        0320000000
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-home">
+        <div class="py-4">
+            <div class="py-3 d-flex justify-content-center flex-column align-items-center">
+                <h4 class="fw-bolder">Three Dev Web</h4>
+                <p>Web Developer and Web Designer</p>
+                <div class="social-media d-flex gap-3 mb-3">
+                    <a class="social-media-icon" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="social-media-icon" href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <p>Design:<span class="fw-bolder">NNT</span></p>
+            </div>
+        </div>
+    </footer>
+    <div class="btn-scroll-up">
+        <img class="w-100" src="./images/button_up.png">
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/js.js"></script>
+</body>
 </html>

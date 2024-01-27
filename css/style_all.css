@@ -1,0 +1,21 @@
+.color-1{
+    color: #FD9060;
+}
+.color-2{
+    color: #636881;
+}
+.color-3{
+    color: #9097ba;
+}
+.bg-color-1{
+    background-color: #34416F;
+}
+.bg-color-3{
+    background-color: #5e6fac;
+}
+.rounded-top-10px{
+    border-radius: 10px 10px 0 0;
+}
+.rounded-bottom-10px{
+    border-radius: 0 0 10px 10px;
+}

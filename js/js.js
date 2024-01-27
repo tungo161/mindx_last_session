@@ -28,6 +28,15 @@ $(document).ready(function(){
         }, 200);
         });
     });
+$(document).ready(function(){
+    $('#move_to_contact').click(function(e){
+        e.preventDefault();
+        var targetOffset = $("#contact_id").offset().top - 83;    
+            $('html, body').animate({
+                scrollTop: targetOffset
+            }, 200);
+    });
+});
 $(document).ready(function(){    
     var menuItems = $('.menu-header a');
     var offcanvasItems = $('.offcanvas-body a');
